@@ -25,5 +25,5 @@ async function bootstrap() {
 // Calling the bootstrap function to start the application.
 // Once the bootstrap function completes, it logs a message to the console.
 bootstrap().then((_r) => {
-  console.log("Nest Bootstrap Function");
+  console.log('Nest Bootstrap Function');
 });
