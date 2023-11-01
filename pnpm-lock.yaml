@@ -22,12 +22,18 @@ importers:
       '@nestjs/platform-express':
         specifier: ^10.0.0
         version: 10.2.7(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)
+      '@trpc/server':
+        specifier: ^10.43.0
+        version: 10.43.0
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
       rxjs:
         specifier: ^7.8.1
         version: 7.8.1
+      zod:
+        specifier: ^3.22.4
+        version: 3.22.4
     devDependencies:
       '@nestjs/cli':
         specifier: ^10.0.0
@@ -1218,6 +1224,10 @@ packages:
     resolution: { integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw== }
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@trpc/server@10.43.0:
+    resolution: { integrity: sha512-1/h9KCPkTNNmpN5VKfKO4kPcl/W4Y9VQla4YGg4pydSh/+4b//0IPfvk3Oz4tz/tvWyAUlBKkBVhD3GfDLcAQA== }
     dev: false
 
   /@tsconfig/node10@1.0.9:
@@ -6778,3 +6788,7 @@ packages:
     resolution: { integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q== }
     engines: { node: '>=10' }
     dev: true
+
+  /zod@3.22.4:
+    resolution: { integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg== }
+    dev: false
