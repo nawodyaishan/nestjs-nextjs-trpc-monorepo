@@ -101,6 +101,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@trpc/client':
+        specifier: ^10.43.0
+        version: 10.43.0(@trpc/server@10.43.0)
+      '@trpc/server':
+        specifier: ^10.43.0
+        version: 10.43.0
       next:
         specifier: 14.0.1
         version: 14.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -1224,6 +1230,14 @@ packages:
     resolution: { integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw== }
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@trpc/client@10.43.0(@trpc/server@10.43.0):
+    resolution: { integrity: sha512-8LbSpPHmIseb/Ke+GzL45y0itkKunGQWfxqHf2uy69RSRvER0vj+Gu67L8YD86FBgc/nsX/6GBuJiUet5lIDIw== }
+    peerDependencies:
+      '@trpc/server': 10.43.0
+    dependencies:
+      '@trpc/server': 10.43.0
     dev: false
 
   /@trpc/server@10.43.0:

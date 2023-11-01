@@ -7,6 +7,9 @@ import * as trpcExpress from '@trpc/server/adapters/express'; // Importing the t
 // Making the class injectable so that it can be used with NestJS's dependency injection system.
 @Injectable()
 export class TrpcRouter {
+  // Constructor injection of the TrpcService.
+  constructor(private readonly trpc: TrpcService) {}
+
   // Defining the tRPC router and its procedures.
   appRouter = this.trpc.router({
     hello: this.trpc.procedure
@@ -22,9 +25,6 @@ export class TrpcRouter {
         return `Your Input is ${input.name ?? 'Unknown'}`;
       }),
   });
-
-  // Constructor injection of the TrpcService.
-  constructor(private readonly trpc: TrpcService) {}
 
   // Method to apply the tRPC middleware to the NestJS application.
   async applyMiddleware(app: INestApplication) {
