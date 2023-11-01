@@ -1,5 +1,14 @@
 {
+  "extends": "../../tsconfig.json",
+  // Extend the config options from the root,
   "compilerOptions": {
+    // The following options are not required as they've been moved to the root tsconfig
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
+    // "incremental": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "skipLibCheck": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -7,26 +16,19 @@
       "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -38,3 +40,4 @@
     "node_modules"
   ]
 }
+
